@@ -534,7 +534,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         premium = await db.all_premium_users()
         u_size = get_size(await db.get_db_size())
         f_size = get_size(536870912 - await db.get_db_size())
-        uptime = get_readable_time(time.time() - temp.START_TIME)
+        #uptime = get_readable_time(time.time() - temp.START_TIME)
         buttons = [[
             InlineKeyboardButton('« ʙᴀᴄᴋ', callback_data='my_about')
         ]]
