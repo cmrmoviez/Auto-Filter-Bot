@@ -36,7 +36,7 @@ async def is_subscribed(bot, query, channel):
     if AUTH_CHANNEL:
         channel.append(AUTH_CHANNEL)
     for id in channel:
-        chat = await bot.get_chat(int(id))
+        chat = await bot.get_chat(str(id))
         try:
             await bot.get_chat_member(id, query.from_user.id)
         except UserNotParticipant:
