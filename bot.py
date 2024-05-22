@@ -62,7 +62,7 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        print("Bot Stopped! Bye...")
+        print("Sir , Bot Stopped")
 
 
     async def iter_messages(self: Client, chat_id: Union[int, str], limit: int, offset: int = 0) -> Optional[AsyncGenerator["types.Message", None]]:
